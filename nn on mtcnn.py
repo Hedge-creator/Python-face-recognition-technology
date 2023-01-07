@@ -12,7 +12,7 @@ def draw_image_with_boxes(image_path, result_list):
 		#узнаем координаты лиц
 		x, y, width, height = result['box']
 		#создаём форму
-		rect = Rectangle((x, y), width, height, fill=False, color='aqua') #можно задать толщину линии и её цевт
+		rect = Rectangle((x, y), width, height, fill=False, color='aqua') #можно задать толщину линии и её цвет
 		ax.add_patch(rect) #рисуем квадраты
 	#вывод полученного графика
 	pyplot.show()
